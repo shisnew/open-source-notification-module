@@ -121,6 +121,12 @@ local function makeVis()
         TweenService:Create(Arrow,TweenInfo.new(.5), { ImageTransparency = 1 }):Play()
     end
 
+Arrow.MouseButton1Click:Connect(function()
+    makeInvis()
+    Debris:AddItem(Notification, .25)
+    wait()
+end)
+
     makeVis()
    a =  TweenService:Create(deboucne,TweenInfo.new(delay,Enum.EasingStyle.Quad), { Size = UDim2.new(0, 0, 0, 7)})
    a:Play()
@@ -131,3 +137,5 @@ local function makeVis()
    end)
     return main
 end
+
+main:Notification("Title","Description",25,Color3.fromRGB(242, 191, 9))
