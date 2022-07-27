@@ -138,4 +138,3 @@ end)
     return main
 end
 
-main:Notification("Title","Description",25,Color3.fromRGB(242, 191, 9))
